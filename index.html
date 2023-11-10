@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project 1 - Data Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+				
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Data Cleaning<br />
+						</h1>
+						<p> </a></p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+				<header id="header">
+					<a href="https://ronanc92.github.io/RonansPortfolio.github.io/" class="logo">Home</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="https://ronanc92.github.io/RonansPortfolio.github.io/">Home</a></li>
+						<li><a href="https://ronanc92.github.io/RonansFeaturedProject.github.io/">Featured Project</a></li>
+						<li class="active"><a href="https://ronanc92.github.io/RonanC92-RonansProject1.github.io/">Data Cleaning</a></li>
+						<li><a href="https://ronanc92.github.io/RonansProject2.github.io/">Data Analysis</a></li>
+						<li><a href="https://ronanc92.github.io/RonansProject3.github.io/">Data Visualization</a></li>
+
+					</ul>
+
+				
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ronan-costello-830063b3/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/RonanC92" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project Post -->
+						
+							<article class="Data Cleaning">
+								<header class="major">
+									<div align="left">
+										<span class="image fit"><img src="images/data_cleaning.jpg" alt="" /></span>	
+									<h3 id="Introduction"><span id="introduction">Introduction</span></h3>
+									<p> In this project I will be going through the analysis of FIFA soccer players and their statistics. 
+										I will be primarily focusing on the data cleaning and transformation aspect for data analysis and why it is so important for further analysis.</p>
+										
+										<h3 id="Statement of business task"><span id="Statement of business task">Statement of business task</span></h3>
+										<p> When a Data Analyst receives a dataset, it is imperative that one of the first objectives is to go through and ensure the dataset is clean 
+											and appropriate to use for further analysis. Using the dataset ‘FIFA Players and their rankings for 2021’ listed on Kaggle, I will be able to guide you on what 
+											I found to be unclean data and how I was able to clean and transform this dataset. Using Excel I will be able to go through how I can separate the 'joined' columns, 
+											change some formatted cells into integers, remove the new line characters from the 'Hits' Column and my thinking on how I separated the Team & contract 
+											column into separate columns.</p>
+											<h3 id="Preparing the data"><span id="Preparing the data">Preparing the data</span></h3>
+											<p> 
+												<ul>
+												<li> In this analysis I am using the data FIFA 21 messy, raw dataset for cleaning/ exploring, by Rachit Toshniwal on Kaggle. </li>
+												<li> It is CC0: Public domain License, user had waived right to work under copyright law. </li>
+												<li> Contains Data on 18979 FIFA players Data on their rankings across various metrics such as Player name, Nationality, Height, Weight, Value, Wage, attacking, Skill etc.</li>
+											    <li> Dataset has 2 files in CSV format organized in Wide format.</li>
+											</ul>
+											</p>	
+											<h3 id="ROCCC Analysis"><span id="ROCCC Analysis">ROCCC Analysis </span></h3>
+											<p> 
+												<ul>
+												<li> Reliability : <strong>HIGH</strong> – dataset was collected from 18979 FIFA football players that play professional soccer. </li>
+												<li> Originality : <strong>LOW</strong> – third party data collected from sofifa.com meaning the originality is low. </li>
+												<li> Comprehensive : <strong>HIGH</strong> – Contains a very comprehensive dataset using multiple columns on Players statistics.</li>
+											    <li> Current : <strong>MEDIUM</strong> – data is 2/3 years old meaning some of the players on this list may have retired or statistics could have changed from year it was posted.</li>
+												<li> Cited : <strong>HIGH</strong> – data collector and source is well documented.</li>
+											</ul>
+											</p>
+                                            <h3 id="Data Selection"><span id="Data Selection">Data Selection</span></h3>
+									<p> The focus here is to clean and transform the datasets that we have downloaded. There are only two datasets for this project and they are named: 
+									<li> fifa21_raw_data_v1.csv</li>
+									<li> fifa21_raw_data_v2.csv</li>
+									</p>
+									<h3 id="Processing the Data"><span id="Processing the Data">Processing the Data</span></h3>
+									<p> The tool I am using for this project is Excel. I could use a programming language like Python in this case however as this is the first project I want to keep this to a base level and incorporate more tools in other projects.</p>
+									<h3 id="Data Cleaning"><span id="Data Cleaning">Data Cleaning</span></h3>
+									<p> How I analyse my data for data cleaning and Transformation is as follows in this step by step guide: 
+										<ul>
+										<li> First, I download the dataset from Kaggle, unzip the files and I store it in a folder titled ‘FIFA 21 players Dataset’. To ensure I am adhering to the Data Analysis best practices I need to rename one of the excel files from ‘fifa21 raw data v2’ to ‘fifa21_raw_data_v2’ and ‘fifa21_raw_data’ to ‘fifa21_raw_data_v1’. </li>
+										<li> I open both csv files into Microsoft excel and look through the data that has been provided to me scanning for any errors, blank fields or duplicates.</li>
+										<li> I want to check that the height and weight columns are using the appropriate data types. The first thing I do apply the filter icon to the first row on both the datasets and I can see that v1 of the dataset is clean as the Height and Weight are grouped in feet and lbs. V2 however is grouped as feet/cm and lbs/kg. I need to clean this, so it is similar to the v1 file and in order to do this I create two new columns and enter the following example formula:</li>
+										<span class="image fit"><img src="images/Height_Weight_Formula.jpg" alt="" /></span>
+									   
+									
+										<p>I apply this to all the rows, and this should clean the height and weight data for this particular section.</p>
+
+										<li>I then Separate the joined column into year, month and day columns you can use the text to columns function in the data tab. Open to new columns to the right of the joined column the file type will be delimited and check the comma and space and press finish and rearrange the tabs to day, month, year if necessary. Do this for V1 and V2 sheets. </li>
+										<li>Next, I notice that I need to clean/ transform value, wage and release clause into columns of integers as there is unnecessary values “â‚¬”. I remove these using the find and replace function in the home tab. I input the value I want to take out in the find what field and replace it with a space in the replace with field and press Replace all. Do this for V1 and V2 sheets. </li>
+									    <li>I found that the is a Line break in the hit column, to clean this I select the entire column and I again use the find and replace function. In the find what field I press CTRL + J and in the replace with leave empty and then hit replace all. Only necessary for V1 dataset. </li>
+									    <li>On the V1 dataset the team and contract column should be separated as it might be handy if we wanted to understand if there were correlations or causations to players based on their club or contract length.  </li>
+										We can separate this using the clean formula which will remove the line breaks from the cells:
+										
+										<span class="image fit"><img src="images/cell_split.jpg" alt="" /></span>
+														
+									</ul>
+									</p>
+									<h3 id="Conclusion"><span id="Conclusion">Conclusion</span></h3>
+									<p> In Conclusion I have Cleaned and Transformed the data provided to me by appropriating the Height and weight data types, separated the Joined column, Cleaned columns into integers, removed new line characters and separated columns.
+										As stated this is highly important for data analysis early on as it is important in order to avoid running into any issues further into the data analysis processes.
+									</p>
+								
+								</header>
+
+								
+							
+								</ul>
+							</article>
+						
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="https://ronanc92.github.io/RonansFeaturedProject.github.io/" class="previous">back</a>
+									<a href="https://ronanc92.github.io/RonansFeaturedProject.github.io/" class="page">1</a>
+									<a href="https://ronanc92.github.io/RonanC92-RonansProject1.github.io/" class="page active">2</a>
+									<a href="https://ronanc92.github.io/RonansProject2.github.io/" class="page">3</a>
+									<a href="https://ronanc92.github.io/RonansProject3.github.io/" class="page">4</a>
+									<a href="https://ronanc92.github.io/RonansProject2.github.io/" class="next">Next</a>
+								
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Data Cleaning</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
